@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Mealitem from "./MealItem";
-import './Home.css'
+import MealItem from "../components/MealItem";
+import '../styles/Home.css'
 
 const Meal = () => {
     const[search,setSearch]=useState("");
-    const[Mymeal,setMeal]=useState();
+    const[meal,setMeal]=useState();
     const searchMeal=(evt)=>{
         if(evt.key=="Enter")
         {
@@ -36,10 +36,10 @@ const Meal = () => {
                 <div className="home-cards">
                    {
 
-                    (Mymeal==null)? <p className="notSearch">Not found</p> :
-                         Mymeal.map((res)=>{
+                    (meal==null)? <p className="notSearch">Not found</p> :
+                         meal.map((res)=>{
                              return(
-                            <Mealitem data={res}/>)}
+                            <MealItem data={res}/>)}
 
                     )
 
