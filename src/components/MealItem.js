@@ -1,7 +1,9 @@
 import React from "react";
-import './Home.css';
-const Mealitem=(getMeal)=>{
-    console.log(getMeal.data)
+import '../styles/Home.css';
+
+
+const MealItem=(getMeal)=>{
+    // console.log(getMeal.data)
     return(
         <>
              <div className="card">
@@ -20,4 +22,4 @@ const Mealitem=(getMeal)=>{
         </>
     )
 }
-export default Mealitem;
+export default MealItem;
