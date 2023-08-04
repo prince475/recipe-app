@@ -21,7 +21,7 @@ const Footer = () => {
 const footerOrientation ={
   position: 'bottom',
   width: '100%',
-  border: '1px solid',
+  border: '0.15rem solid',
   bottom: '10rem',
     display: 'flex',
     padding: '10px'
@@ -37,20 +37,23 @@ const footerStyle = {
   alignItems: 'center',
   backgroundColor: 'black',
   color: 'orange',
-  padding: '2rem',
+  padding: '4rem',
   marginTop: '2rem',
+  marginBottom: '1rem',
   paddingBottom: '2rem',
+  borderRadius: '1rem'
 };
 
 const socialMediaStyle = {
   display: 'flex',
+  padding: '2rem',
   justifyContent: 'center',
   alignItems: 'center',
 };
 
 const copyright = {
-  fontSize: '0.8rem',
-  padding: '5px'
+  fontSize: '1.2rem',
+  padding: '6px'
 };
 
 export default Footer;
